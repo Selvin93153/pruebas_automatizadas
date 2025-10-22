@@ -8,8 +8,8 @@ test("El contador de votos se incrementa al votar por un auto", async ({ page })
   // 2️⃣ Iniciar sesión
   await page.waitForSelector('input[placeholder="Login"]');
   await page.waitForSelector('input[type="password"]');
-  await page.fill('input[placeholder="Login"]', "Tu correo");
-  await page.fill('input[type="password"]', "Tu contraseña!");
+  await page.fill('input[placeholder="Login"]', "Tu Usuario");
+  await page.fill('input[type="password"]', "Tu contraseña");
   await page.click('button.btn-success');
   await expect(page.locator('a[href="/profile"]')).toBeVisible();
 

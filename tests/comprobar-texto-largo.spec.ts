@@ -6,7 +6,7 @@ test("Validar mensaje de error cuando el comentario excede el límite permitido"
   await page.setViewportSize({ width: 710, height: 735 });
 
   // 2️⃣ Iniciar sesión
-  await page.fill('input[placeholder="Login"]', "Tu usuario");
+  await page.fill('input[placeholder="Login"]', "Tu Usuario");
   await page.fill('input[type="password"]', "Tu contraseña");
   await page.click('button.btn-success');
   await expect(page.locator('a[href="/profile"]')).toBeVisible();

@@ -9,8 +9,8 @@ test("Votar por el modelo Diablo (usuario autenticado)", async ({ page }) => {
   await page.waitForSelector('input[placeholder="Login"]', { timeout: 15000 });
   await page.waitForSelector('input[type="password"]', { timeout: 15000 });
 
-  await page.fill('input[placeholder="Login"]', "MiUsuario"); // CAMBIAR ESTE POR SU USUARIOOOOOOOOOO
-  await page.fill('input[type="password"]', "Micontraseña.");                 // CAMBIAR ESTE POR SU CONTRASEÑA
+  await page.fill('input[placeholder="Login"]', "Tu Usuario"); // CAMBIAR ESTE POR SU USUARIOOOOOOOOOO
+  await page.fill('input[type="password"]', "Tu contraseña");                 // CAMBIAR ESTE POR SU CONTRASEÑA
 
   // Hacer clic en el botón verde Login
   await page.click('button.btn-success');
