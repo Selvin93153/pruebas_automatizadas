@@ -36,6 +36,10 @@ npx playwright test tests/comprobar-incremento-voto.spec.ts --project=chromium -
 npx playwright test tests/comprobar-texto-largo.spec.ts --project=chromium --headed
 npx playwright test tests/comprobar-voto-unico.spec.ts --project=chromium --headed
 npx playwright test tests/votar-carro.spec.ts --project=chromium --headed
+npx playwright test tests/votar-sin-login.spec.ts --project=chromium --headed
+npx playwright test tests/expandir-imagen-carro.spec.ts --project=chromium --headed
+npx playwright test tests/limite-paginacion.spec.ts --project=chromium --headed
+npx playwright test tests/limite-inferior-paginacion.spec.ts --project=chromium --headed
 ```
 ---
 
