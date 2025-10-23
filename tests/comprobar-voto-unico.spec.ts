@@ -8,8 +8,8 @@ test("Verificar que no se pueda votar otra vez", async ({ page }) => {
   // 2️⃣ Iniciar sesión
   await page.waitForSelector('input[placeholder="Login"]');
   await page.waitForSelector('input[type="password"]');
-  await page.fill('input[placeholder="Login"]', "Tu Usuario");
-  await page.fill('input[type="password"]', "Tu contraseña");
+  await page.fill('input[placeholder="Login"]', "tu usuario");
+  await page.fill('input[type="password"]', "tu contraseña");
   await page.click('button.btn-success');
 
   // 3️⃣ Ir a Lamborghini → Diablo
